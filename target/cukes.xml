@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="282.607">
+<testcase classname="F01_register | User could register with valid data" name="User should be able to register with valid username and password" time="9.707">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user enter a valid data................................................passed
+And user press on register button...........................................passed
+Then user register to the system successfully...............................passed
+And user logout.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="user could login with valid email and password" time="6.574">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email and password...............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="User can use &quot;Follow us&quot; with &quot;facebook&quot;" time="36.908">
+<failure message="InCorrect URL expected [https://www.facebook.com/nopCommerce] but found [https://web.facebook.com/nopCommerce?_rdc=1&amp;_rdr]" type="java.lang.AssertionError"><![CDATA[When click on follow us "facebook"..........................................passed
+Then "https://www.facebook.com/nopCommerce" opened successfully.............failed
+
+StackTrace:
+java.lang.AssertionError: InCorrect URL expected [https://www.facebook.com/nopCommerce] but found [https://web.facebook.com/nopCommerce?_rdc=1&_rdr]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at com.automation.step_definitions.Login.navigatedSuccessfully(Login.java:50)
+	at ✽."https://www.facebook.com/nopCommerce" opened successfully(file:///C:/Users/mahmo/Downloads/Automation-project/Mahmoud-Alzanaty-E-commerce-Automation-Project-9a11108/src/main/resources/features/F02_login.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="User can use &quot;Follow us&quot; with &quot;twitter&quot;" time="12.791">
+<system-out><![CDATA[When click on follow us "twitter"...........................................passed
+Then "https://twitter.com/nopCommerce" opened successfully..................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="User can use &quot;Follow us&quot; with &quot;youtube&quot;" time="35.419">
+<system-out><![CDATA[When click on follow us "youtube"...........................................passed
+Then "https://www.youtube.com/user/nopCommerce" opened successfully.........passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_resetPassword |User could reset his/her password successfully" name="Success message appear after user reset his/her password" time="12.862">
+<system-out><![CDATA[Given user go to account page...............................................passed
+And user choose change password.............................................passed
+When user enter new password................................................passed
+And user press on change password button....................................passed
+Then user changed password successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User could search for any product" name="user could search using SKU" time="14.055">
+<system-out><![CDATA[Given user clicks on search field...........................................passed
+When user search with SKU of product........................................passed
+Then user could find results is true........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User could search for any product" name="user could search for product using full name" time="5.45">
+<system-out><![CDATA[When user clicks on search field............................................passed
+And user search with name of product........................................passed
+Then user could find relative results.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User could search for any product" name="user could makes advanced search" time="6.512">
+<system-out><![CDATA[Given user choose advanced search...........................................passed
+When user choose specific category..........................................passed
+Then user choose manufacturer...............................................passed
+And user click on search button.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_addToWishlist | Logged user could add different products to Wishlist" name="add To Wishlist" time="7.309">
+<system-out><![CDATA[Given user could select a product...........................................passed
+When user can add product to Wishlist.......................................passed
+Then product added to Wishlist successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F06_filterWithColor | Logged user could filter with color" name="user filter products with specific color" time="9.14">
+<system-out><![CDATA[Given user go to category page..............................................passed
+When user select sub-category...............................................passed
+Then user filter products by color..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_selectCategories | Logged user could select different Categories" name="Select random category then hover and open sub-Category" time="5.352">
+<system-out><![CDATA[When user enter to category page............................................passed
+Then open sub-category......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_switchCurrencies | Logged User could switch between currencies" name="User could switch between currencies US-Euro" time="7.339">
+<system-out><![CDATA[Given user click on currencies list.........................................passed
+When user change the currency...............................................passed
+Then currency changed successfully..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F09_selectTags | Logged user could select different tags" name="user could select tags" time="7.896">
+<system-out><![CDATA[Given user navigate to tags page............................................passed
+Then select random tags.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F10_AddToCompareList | Logged user could add different products to compare list" name="AddTo Compare List" time="7.909">
+<system-out><![CDATA[Given user select a product.................................................passed
+When user can add product to compare list...................................passed
+Then product added to compare list successfully.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_addToCart | Logged user could add different products to Shopping cart" name="user add products to cart" time="5.702">
+<system-out><![CDATA[Given user can select a product.............................................passed
+When user can add product to shipping cart..................................passed
+And product added to cart successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_addToCart | Logged user could add different products to Shopping cart" name="user edit shopping cart" time="8.468">
+<system-out><![CDATA[Given user open shopping cart...............................................passed
+When User can change product quantity in shipping cart......................passed
+Then User can delete product from shipping cart.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F_12 Create successful Order" name="User can create order and it should be created successfully" time="15.116">
+<system-out><![CDATA[Given go to shopping cart...................................................passed
+And accept the terms of service.............................................passed
+When click on check out button..............................................passed
+And Update address information..............................................passed
+Then confirm order..........................................................passed
+And order completed successfully............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

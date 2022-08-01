@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">17</td><td class="num">78,352</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="17">com.automation.runners.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="17">1655732008647</td><td rowspan="17">4019</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m7">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m8">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m9">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m10">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m11">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m12">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m13">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m14">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m15">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m16">runScenario</a></td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can use &quot;Follow us&quot; with &quot;facebook&quot;&quot;</td><td>&quot;F02_login | users could use login functionality to open their accounts&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=class name, value=facebook}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.LoginPage.followUs(LoginPage.java:48)
+    at com.automation.step_definitions.Login.clickFollowUstest(Login.java:43)
+    at ✽.click on follow us &quot;facebook&quot;(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F02_login.feature:11)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;AddTo Compare List&quot;</td><td>&quot;F10_AddToCompareList | Logged user could add different products to compare list&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElements {using=xpath, value=//div [@class=&quot;product-item&quot;]
+    }]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+    at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:421)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:413)
+    at com.automation.pages.CompareList.select(CompareList.java:24)
+    at com.automation.step_definitions.AddToCompareList.select_a_product(AddToCompareList.java:19)
+    at ✽.user select a
+    product(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F10_addToCompareList.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Success message appear after user reset his/her password&quot;</td><td>&quot;F03_resetPassword |User could reset his/her password successfully&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=css selector, value=a[class=&quot;ico-account&quot;]}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.MyAccount.go(MyAccount.java:30)
+    at com.automation.step_definitions.ResetPassword.go_to_account_page(ResetPassword.java:16)
+    at ✽.user go to account
+    page(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F03_resetPassword.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;user edit shopping cart&quot;</td><td>&quot;F11_addToCart | Logged user could add different products to Shopping cart&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=css selector, value=a[href=&quot;/cart&quot;]}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.CartPage.open(Cart.java:35)
+    at com.automation.step_definitions.AddToCart.open_shopping_cart(AddToCart.java:32)
+    at ✽.user open shopping
+    cart(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F11_addToCart.feature:10)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;add To Wishlist&quot;</td><td>&quot;F05_addToWishlist | Logged user could add different products to Wishlist&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElements {using=xpath, value=//div [@class=&quot;product-item&quot;
+    ]}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+    at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:421)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:413)
+    at com.automation.pages.WishlistPage.selectProduct(Wishlist.java:23)
+    at com.automation.step_definitions.AddToWishlist.select_a_product(AddToWishlist.java:28)
+    at ✽.user could select a
+    product(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F05_addToWishList.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User should be able to register with valid username and password&quot;</td><td>&quot;F01_register | User could register with valid data&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.UnsupportedOperationException:
+    You may only deselect options of a multi-select
+    at org.openqa.selenium.support.ui.Select.deselectByValue(Select.java:228)
+    at com.automation.pages.Registration.birthDate(Registration.java:62)
+    at com.automation.step_definitions.Register.enter_a_valid_data(Register.java:30)
+    at ✽.user enter a valid
+    data(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F01_register.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;user could login with valid email and password&quot;</td><td>&quot;F02_login | users could use login functionality to open their accounts&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException:
+    Unable to find element with locator By.cssSelector: a[href=&quot;/logout&quot;]
+    For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: driver.version: RemoteWebDriver
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.LoginPage.loginSuccess(LoginPage.java:43)
+    at com.automation.step_definitions.Login.success_login(Login.java:37)
+    at ✽.user login to the system
+    successfully(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F02_login.feature:8)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can create order and it should be created successfully&quot;</td><td>&quot;F_12 Create successful Order&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f1c7867c9e5a9d844f0531bed79f9a5, get {url=https://demo.nopcommerce.com/apple-macbook-pro-13-inch}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1046)
+	at com.automation.step_definitions.CreateOrder.go_to_shopping_cart(CreateOrder.java:18)
+	at ✽.go to shopping cart(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F12_createSuccessfulOrder.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;user could makes advanced search&quot;</td><td>&quot;F04_search | Logged User could search for any product&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=xpath, value=//div/input[@id=&quot;advs&quot;]}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.Search.advanced_search(Search.java:57)
+    at com.automation.step_definitions.Search.advanced_search(Search.java:43)
+    at ✽.user choose advanced
+    search(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F04_search.feature:10)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can use &quot;Follow us&quot; with &quot;youtube&quot;&quot;</td><td>&quot;F02_login | users could use login functionality to open their accounts&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=class name, value=youtube}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.LoginPage.followUs(LoginPage.java:48)
+    at com.automation.step_definitions.Login.clickFollowUstest(Login.java:43)
+    at ✽.click on follow us &quot;youtube&quot;(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F02_login.feature:11)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;user could search for product using full name&quot;</td><td>&quot;F04_search | Logged User could search for any product&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=id, value=small-searchterms}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.Search.clickField(Search.java:31)
+    at com.automation.step_definitions.Search.clicks_on_search_field(Search.java:19)
+    at ✽.user clicks on search
+    field(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F04_search.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;user filter products with specific color&quot;</td><td>&quot;F06_filterWithColor | Logged user could filter with color&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=link text, value=Apparel}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.FilterWithColor.go(FilterWithColor.java:21)
+    at com.automation.step_definitions.ColorsFilter.go_to_category_page(ColorsFilter.java:13)
+    at ✽.user go to category
+    page(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F06_filterWithColor.feature:6)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User can use &quot;Follow us&quot; with &quot;twitter&quot;&quot;</td><td>&quot;F02_login | users could use login functionality to open their accounts&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=class name, value=twitter}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.LoginPage.followUs(LoginPage.java:48)
+    at com.automation.step_definitions.Login.clickFollowUstest(Login.java:43)
+    at ✽.click on follow us &quot;twitter&quot;(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F02_login.feature:11)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;user add products to cart&quot;</td><td>&quot;F11_addToCart | Logged user could add different products to Shopping cart&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f1c7867c9e5a9d844f0531bed79f9a5, get {url=https://demo.nopcommerce.com/apple-macbook-pro-13-inch}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1046)
+	at com.automation.step_definitions.AddToCart.select_a_product(AddToCart.java:15)
+	at ✽.user can select a product(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F11_addToCart.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User could switch between currencies US-Euro&quot;</td><td>&quot;F08_switchCurrencies | Logged User could switch between currencies&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElement {using=xpath, value=//div[@class=&quot;currency-selector&quot;]}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+    at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+    at com.automation.pages.Currencies.go(Currencies.java:22)
+    at com.automation.step_definitions.ChangeCurrency.currencies_list(ChangeCurrency.java:17)
+    at ✽.user click on currencies
+    list(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F08_switchCurrencies.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Select random category then hover and open sub-Category&quot;</td><td>&quot;F07_selectCategories | Logged user could select different Categories&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException:
+    no such window: target window already closed
+    from unknown error: web view not found
+    (Session info: chrome=102.0.5005.115)
+    Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+    System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch:
+    &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+    Driver info: org.openqa.selenium.chrome.ChromeDriver
+    Command: [1f1c7867c9e5a9d844f0531bed79f9a5, findElements {using=xpath, value=//div/ul[@class=&quot;top-menu
+    notmobile&quot;]/li/a}]
+    Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome:
+    {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...},
+    goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal,
+    platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115,
+    setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000},
+    unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+    webauthn:virtualAuthenticators: true}
+    Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+    at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+    at
+    java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+    at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+    at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+    at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+    at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+    at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+    at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+    at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+    at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:421)
+    at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:413)
+    at com.automation.pages.CategoriesPage.go(Categories.java:23)
+    at com.automation.step_definitions.SelectCategories.enter_to_category_page(SelectCategories.java:16)
+    at ✽.user enter to category
+    page(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F07_selectCategories.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.automation.runners.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;user could select tags&quot;</td><td>&quot;F09_selectTags | Logged user could select different tags&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=102.0.5005.115)
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;DESKTOP-CRROM10&apos;, ip: &apos;10.0.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1f1c7867c9e5a9d844f0531bed79f9a5, get {url=https://demo.nopcommerce.com/producttag/all}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60197}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60197/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f1c7867c9e5a9d844f0531bed79f9a5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1046)
+	at com.automation.step_definitions.SelectTags.tags_page(SelectTags.java:16)
+	at ✽.user navigate to tags page(file:///C:/Users/Administrator/Downloads/E-Commerce%20Automation-Test/E-Commerce%20Automation-Test/src/main/resources/features/F09_selectTags.feature:5)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

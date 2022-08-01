@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>14 Jun 2022, 23:16</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCart.add_product_to_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="95255600">0.095</td>
+              <td class="duration" data-value="95255600">0.095</td>
+              <td class="duration" data-value="95255600">0.095</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCart.change_product_quantity()</td>
+              <td>1</td>
+              <td class="duration" data-value="8018136900">8.018</td>
+              <td class="duration" data-value="8018136900">8.018</td>
+              <td class="duration" data-value="8018136900">8.018</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCart.delete_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCart.open_shopping_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="77260100">0.077</td>
+              <td class="duration" data-value="77260100">0.077</td>
+              <td class="duration" data-value="77260100">0.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCart.product_added_to_cart_successfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="651560200">0.651</td>
+              <td class="duration" data-value="651560200">0.651</td>
+              <td class="duration" data-value="651560200">0.651</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCart.select_a_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="1048881100">1.048</td>
+              <td class="duration" data-value="1048881100">1.048</td>
+              <td class="duration" data-value="1048881100">1.048</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCompareList.add_product_to_compare_list()</td>
+              <td>1</td>
+              <td class="duration" data-value="77201500">0.077</td>
+              <td class="duration" data-value="77201500">0.077</td>
+              <td class="duration" data-value="77201500">0.077</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCompareList.product_added_to_compare_list_successfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="1434142700">1.434</td>
+              <td class="duration" data-value="1434142700">1.434</td>
+              <td class="duration" data-value="1434142700">1.434</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToCompareList.select_a_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="4559059500">4.559</td>
+              <td class="duration" data-value="4559059500">4.559</td>
+              <td class="duration" data-value="4559059500">4.559</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToWishlist.add_product_to_Wishlist()</td>
+              <td>1</td>
+              <td class="duration" data-value="73533700">0.073</td>
+              <td class="duration" data-value="73533700">0.073</td>
+              <td class="duration" data-value="73533700">0.073</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToWishlist.product_added_to_Wishlist_successfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="547445800">0.547</td>
+              <td class="duration" data-value="547445800">0.547</td>
+              <td class="duration" data-value="547445800">0.547</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.AddToWishlist.select_a_product()</td>
+              <td>1</td>
+              <td class="duration" data-value="4182967100">4.182</td>
+              <td class="duration" data-value="4182967100">4.182</td>
+              <td class="duration" data-value="4182967100">4.182</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ChangeCurrency.change_currency()</td>
+              <td>1</td>
+              <td class="duration" data-value="1459481000">1.459</td>
+              <td class="duration" data-value="1459481000">1.459</td>
+              <td class="duration" data-value="1459481000">1.459</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ChangeCurrency.currencies_list()</td>
+              <td>1</td>
+              <td class="duration" data-value="152071300">0.152</td>
+              <td class="duration" data-value="152071300">0.152</td>
+              <td class="duration" data-value="152071300">0.152</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ColorsFilter.filter_products_by_color()</td>
+              <td>1</td>
+              <td class="duration" data-value="83138300">0.083</td>
+              <td class="duration" data-value="83138300">0.083</td>
+              <td class="duration" data-value="83138300">0.083</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ColorsFilter.go_to_category_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1479691700">1.479</td>
+              <td class="duration" data-value="1479691700">1.479</td>
+              <td class="duration" data-value="1479691700">1.479</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ColorsFilter.select_sub_category()</td>
+              <td>1</td>
+              <td class="duration" data-value="1701891000">1.701</td>
+              <td class="duration" data-value="1701891000">1.701</td>
+              <td class="duration" data-value="1701891000">1.701</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.CreateOrder.Update_address_information()</td>
+              <td>1</td>
+              <td class="duration" data-value="890383100">0.890</td>
+              <td class="duration" data-value="890383100">0.890</td>
+              <td class="duration" data-value="890383100">0.890</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.CreateOrder.accept_the_terms()</td>
+              <td>1</td>
+              <td class="duration" data-value="98765100">0.098</td>
+              <td class="duration" data-value="98765100">0.098</td>
+              <td class="duration" data-value="98765100">0.098</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.CreateOrder.check_out()</td>
+              <td>1</td>
+              <td class="duration" data-value="4571205000">4.571</td>
+              <td class="duration" data-value="4571205000">4.571</td>
+              <td class="duration" data-value="4571205000">4.571</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.CreateOrder.confirm_order()</td>
+              <td>1</td>
+              <td class="duration" data-value="4444010000">4.444</td>
+              <td class="duration" data-value="4444010000">4.444</td>
+              <td class="duration" data-value="4444010000">4.444</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.CreateOrder.go_to_shopping_cart()</td>
+              <td>1</td>
+              <td class="duration" data-value="5306190900">5.306</td>
+              <td class="duration" data-value="5306190900">5.306</td>
+              <td class="duration" data-value="5306190900">5.306</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.CreateOrder.order_completed()</td>
+              <td>1</td>
+              <td class="duration" data-value="3568280600">3.568</td>
+              <td class="duration" data-value="3568280600">3.568</td>
+              <td class="duration" data-value="3568280600">3.568</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Login.go_to_login_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1008447000">1.008</td>
+              <td class="duration" data-value="1008447000">1.008</td>
+              <td class="duration" data-value="1008447000">1.008</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Login.login_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1488037900">1.488</td>
+              <td class="duration" data-value="1488037900">1.488</td>
+              <td class="duration" data-value="1488037900">1.488</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Login.sleepDriver()</td>
+              <td>14</td>
+              <td class="duration" data-value="4001117857">4.001</td>
+              <td class="duration" data-value="4001117857">4.002</td>
+              <td class="duration" data-value="56015650000">56.015</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Login.success_login()</td>
+              <td>1</td>
+              <td class="duration" data-value="97352500">0.097</td>
+              <td class="duration" data-value="97352500">0.097</td>
+              <td class="duration" data-value="97352500">0.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Login.valid_username_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="210081000">0.210</td>
+              <td class="duration" data-value="210081000">0.210</td>
+              <td class="duration" data-value="210081000">0.210</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Register.enter_a_valid_data()</td>
+              <td>1</td>
+              <td class="duration" data-value="599830800">0.599</td>
+              <td class="duration" data-value="599830800">0.599</td>
+              <td class="duration" data-value="599830800">0.599</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Register.go_to_register_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1300095300">1.300</td>
+              <td class="duration" data-value="1300095300">1.300</td>
+              <td class="duration" data-value="1300095300">1.300</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Register.logout()</td>
+              <td>1</td>
+              <td class="duration" data-value="1281863300">1.281</td>
+              <td class="duration" data-value="1281863300">1.281</td>
+              <td class="duration" data-value="1281863300">1.281</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Register.register_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1565946700">1.565</td>
+              <td class="duration" data-value="1565946700">1.565</td>
+              <td class="duration" data-value="1565946700">1.565</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Register.success_register()</td>
+              <td>1</td>
+              <td class="duration" data-value="59270200">0.059</td>
+              <td class="duration" data-value="59270200">0.059</td>
+              <td class="duration" data-value="59270200">0.059</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ResetPassword.choose_change_password()</td>
+              <td>1</td>
+              <td class="duration" data-value="3363584400">3.363</td>
+              <td class="duration" data-value="3363584400">3.363</td>
+              <td class="duration" data-value="3363584400">3.363</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ResetPassword.enter_a_valid_data()</td>
+              <td>1</td>
+              <td class="duration" data-value="320267900">0.320</td>
+              <td class="duration" data-value="320267900">0.320</td>
+              <td class="duration" data-value="320267900">0.320</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ResetPassword.go_to_account_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="2747887700">2.747</td>
+              <td class="duration" data-value="2747887700">2.747</td>
+              <td class="duration" data-value="2747887700">2.747</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ResetPassword.register_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1150602500">1.150</td>
+              <td class="duration" data-value="1150602500">1.150</td>
+              <td class="duration" data-value="1150602500">1.150</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.ResetPassword.success_register()</td>
+              <td>1</td>
+              <td class="duration" data-value="50632500">0.050</td>
+              <td class="duration" data-value="50632500">0.050</td>
+              <td class="duration" data-value="50632500">0.050</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Search.advanced_search()</td>
+              <td>1</td>
+              <td class="duration" data-value="76791200">0.076</td>
+              <td class="duration" data-value="76791200">0.076</td>
+              <td class="duration" data-value="76791200">0.076</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Search.choose_category()</td>
+              <td>1</td>
+              <td class="duration" data-value="286264100">0.286</td>
+              <td class="duration" data-value="286264100">0.286</td>
+              <td class="duration" data-value="286264100">0.286</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Search.choose_manufacturer()</td>
+              <td>1</td>
+              <td class="duration" data-value="166083900">0.166</td>
+              <td class="duration" data-value="166083900">0.166</td>
+              <td class="duration" data-value="166083900">0.166</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Search.click_on_search_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1600297600">1.600</td>
+              <td class="duration" data-value="1600297600">1.600</td>
+              <td class="duration" data-value="1600297600">1.600</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Search.clicks_on_search_field()</td>
+              <td>1</td>
+              <td class="duration" data-value="151337100">0.151</td>
+              <td class="duration" data-value="151337100">0.151</td>
+              <td class="duration" data-value="151337100">0.151</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Search.find_relative_results()</td>
+              <td>1</td>
+              <td class="duration" data-value="499352800">0.499</td>
+              <td class="duration" data-value="499352800">0.499</td>
+              <td class="duration" data-value="499352800">0.499</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.Search.search_with_product_name()</td>
+              <td>1</td>
+              <td class="duration" data-value="2338624300">2.338</td>
+              <td class="duration" data-value="2338624300">2.338</td>
+              <td class="duration" data-value="2338624300">2.338</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.SelectCategories.enter_to_category_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="858039700">0.858</td>
+              <td class="duration" data-value="858039700">0.858</td>
+              <td class="duration" data-value="858039700">0.858</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.SelectCategories.open_sub_category()</td>
+              <td>1</td>
+              <td class="duration" data-value="45123400">0.045</td>
+              <td class="duration" data-value="45123400">0.045</td>
+              <td class="duration" data-value="45123400">0.045</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.SelectTags.select_tags()</td>
+              <td>1</td>
+              <td class="duration" data-value="2003717200">2.003</td>
+              <td class="duration" data-value="2003717200">2.003</td>
+              <td class="duration" data-value="2003717200">2.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.automation.step_definitions.SelectTags.tags_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1485608500">1.485</td>
+              <td class="duration" data-value="1485608500">1.485</td>
+              <td class="duration" data-value="1485608500">1.485</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>49</td>
+            <td>62</td>
+            <td class="duration">2.020</td>
+            <td class="duration">56.015</td>
+            <td class="duration">2:5.291</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
